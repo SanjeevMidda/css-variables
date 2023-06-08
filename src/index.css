@@ -1,0 +1,22 @@
+*{
+  margin-top: 0px;
+}
+
+.App{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.block{
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  animation: move 1s infinite alternate;
+}
+
+@keyframes move{
+  from{transform: translateY(0px);}
+  to{transform: translateY(var(--uniqueValue));}
+}
